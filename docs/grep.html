@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,300italic" rel="stylesheet" type="text/css">
+ <title>Python Documentation: grep</title>
+ <link href="docu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <div class="back-title">
+  <h1 class="title">Python Documentation: grep</h1>
+ </div>
+ <div class="back-main">
+ <div class="main">
+ <div class="frame" id="nameframe">
+  <h4 class="frame-title">module name</h4>
+  <div class="frame-content">grep</div>
+ </div>
+ <div class="frame" id="nameframe">
+  <h4 class="frame-title">version</h4>
+  <div class="frame-content">1.0</div>
+ </div>
+ <div class="frame" id="descriptionframe">
+  <h4 class="frame-title">DESCRIPTION</h4>
+  <pre class="frame-content">.. module:: grep</br>.. moduleauthor:: Spronck Julien</br>.. created:: Feb. 4, 2015</br>.. modified::</br></br>Python module to mimic the GNU grep function</pre>
+ </div>
+ <div class="frame" id="variablesframe">
+  <h4 class="frame-title">variables</h4>
+  <div class="frame-content">
+   <ul class="variables">
+    <li class="variables">ERROR_COLOR</li>
+    <li class="variables">FILENAME_COLOR</li>
+    <li class="variables">LINENB_COLOR</li>
+    <li class="variables">MATCH_COLOR</li>
+    <li class="variables">NORMAL</li>
+   </ul>
+  </div>
+ </div>
+ <div class="frame" id="functionsframe">
+  <h4 class="frame-title">functions</h4>
+  <div class="frame-content">
+   <ul class="functions">
+    <li class="functions">
+     <div class="function">
+      <div class="function-name"><span class="function-name">_get_all_files</span>(<span class="function-args">files</span>)</div>
+      <pre class="function-docstring">Generator for recursively find files</pre>
+     </div>
+    </li>
+    <li class="functions">
+     <div class="function">
+      <div class="function-name"><span class="function-name">grep</span>(<span class="function-args">pattern</span>, <span class="function-args">file_pattern</span>, <span class="function-kw">ignore_case</span>=<span class="function-kwdef">False</span>, <span class="function-kw">line_number</span>=<span class="function-kwdef">True</span>, <span class="function-kw">no_file_name</span>=<span class="function-kwdef">False</span>, <span class="function-kw">count</span>=<span class="function-kwdef">False</span>, <span class="function-kw">files_with_matches</span>=<span class="function-kwdef">False</span>, <span class="function-kw">files_without_matches</span>=<span class="function-kwdef">False</span>, <span class="function-kw">only_matching</span>=<span class="function-kwdef">False</span>, <span class="function-kw">recursive</span>=<span class="function-kwdef">False</span>, <span class="function-kw">invert_match</span>=<span class="function-kwdef">False</span>, <span class="function-kw">line_regexp</span>=<span class="function-kwdef">False</span>, <span class="function-kw">group</span>=<span class="function-kwdef">None</span>)</div>
+      <pre class="function-docstring">grep searches the named input file_pattern for lines containing a match</br>to the given pattern.  By default, grep prints the matching lines and</br>returns an list of matching lines.</br></br>pattern can be a regular expression understood by the Python re module.</br></br>Args:</br>    pattern (str): the pattern to find. This can be a regular expression.</br>    file_pattern (str): the files in which to search the pattern. This</br>        can have wildcards.</br>    ignore_case (bool, optional): if True, search is case-insensitive.</br>        Defaults to False.</br>    line_number (bool, optional): if True, includes line number in results.</br>        Defaults to True.</br>    no_file_name (bool, optional): if True, does not include file names in</br>        the results. Defaults to False.</br>    count (bool, optional): if True, returns the number of matches per</br>        file rather than the matching lines. Defaults to False.</br>    files_with_matches (bool, optional): if True, returns a list of file</br>        names with matches. Defaults to False.</br>    files_without_matches (bool, optional): if True, returns a list of file</br>        names without matches. Defaults to False.</br>    only_matching (bool, optional): if True, returns only the matching part</br>        rather than entire line. Defaults to False.</br>    recursive (bool, optional): if True, search recursively under each</br>        directory. Defaults to False.</br>    invert_match (bool, optional): if True, returns the non-matching lines.</br>        Defaults to False.</br>    line_regexp (bool, optional): if True, returns only matches that match</br>        entire lines . Defaults to False.</pre>
+     </div>
+    </li>
+    <li class="functions">
+     <div class="function">
+      <div class="function-name"><span class="function-name">igrep</span>(<span class="function-args">pattern</span>, <span class="function-args">file_pattern</span>, <span class="function-kw">ignore_case</span>=<span class="function-kwdef">False</span>, <span class="function-kw">line_number</span>=<span class="function-kwdef">True</span>, <span class="function-kw">no_file_name</span>=<span class="function-kwdef">False</span>, <span class="function-kw">count</span>=<span class="function-kwdef">False</span>, <span class="function-kw">files_with_matches</span>=<span class="function-kwdef">False</span>, <span class="function-kw">files_without_matches</span>=<span class="function-kwdef">False</span>, <span class="function-kw">only_matching</span>=<span class="function-kwdef">False</span>, <span class="function-kw">recursive</span>=<span class="function-kwdef">False</span>, <span class="function-kw">invert_match</span>=<span class="function-kwdef">False</span>, <span class="function-kw">line_regexp</span>=<span class="function-kwdef">False</span>, <span class="function-kw">group</span>=<span class="function-kwdef">None</span>)</div>
+      <pre class="function-docstring">grep searches the named input file_pattern for lines containing a match</br>to the given pattern.  By default, grep prints the matching lines and</br>returns an list of matching lines.</br></br>pattern can be a regular expression understood by the Python re module.</br></br>Args:</br>    pattern (str): the pattern to find. This can be a regular expression.</br>    file_pattern (str): the files in which to search the pattern. This</br>        can have wildcards.</br>    ignore_case (bool, optional): if True, search is case-insensitive.</br>        Defaults to False.</br>    line_number (bool, optional): if True, includes line number in results.</br>        Defaults to True.</br>    no_file_name (bool, optional): if True, does not include file names in</br>        the results. Defaults to False.</br>    count (bool, optional): if True, returns the number of matches per</br>        file rather than the matching lines. Defaults to False.</br>    files_with_matches (bool, optional): if True, returns a list of file</br>        names with matches. Defaults to False.</br>    files_without_matches (bool, optional): if True, returns a list of file</br>        names without matches. Defaults to False.</br>    only_matching (bool, optional): if True, returns only the matching part</br>        rather than entire line. Defaults to False.</br>    recursive (bool, optional): if True, search recursively under each</br>        directory. Defaults to False.</br>    invert_match (bool, optional): if True, returns the non-matching lines.</br>        Defaults to False.</br>    line_regexp (bool, optional): if True, returns only matches that match</br>        entire lines . Defaults to False.</pre>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div> 
+</body>
+</html>

@@ -1,0 +1,9 @@
+dist/grep-1.0/*
+.gitignore~
+MANIFEST
+.DS_Store
+dist/.DS_Store
+dist/grep-1.0
+build/
+build/*
+
